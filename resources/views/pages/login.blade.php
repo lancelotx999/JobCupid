@@ -33,14 +33,15 @@
         <div class="col-xs-6 col-sm-4">
             <h1>LOGO </h1>
              <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
-             <form>
+             <form method="POST" action="{{ url('/login/') }}">
+                {{ csrf_field() }}
                 <div class="form-group">
                     <label for="Email">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="Password">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="text" class="form-control" id="password" name="password" placeholder="Password">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 
@@ -51,4 +52,5 @@
     </div>
   
   </div>
+
 @endsection
