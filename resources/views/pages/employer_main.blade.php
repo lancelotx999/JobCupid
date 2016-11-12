@@ -34,8 +34,8 @@
      <div class="row row-xs-5" >
         <div class="col-md-4"></div>
         <div class="col-md-4 panel panel-default text-center" style="min-height:250px;">
-            <h3>Job Title</h3>
-            <h3>Job description</h3>
+            <h3>Employee Profile Image</h3>
+            <h3>Employee description</h3>
         </div>
         <div class="col-md-4"></div>
      </div>
@@ -43,18 +43,13 @@
          <div class="col-md-4"></div>
          <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
             <div class="row">
-                <div style="font-family:Segoe UI Semilight;font-size:30px;">StartUP, Kuching</div>
-            </div>
-            <div class="row">
                 <div style="font-family:Segoe UI Light;font-size:20px;">
-                     <ul>
-                        <li>{{$user->name}}</li>
-                        <li>{{$user->age}}</li>
-                        <li>{{$user->time_available}}</li>
-                        <li>{{$user->preferred_field}}</li>
-                        <li>{{$user->skills}}</</li>
-                        <li>{{$user->desc}}</</li>
-                     </ul>
+                      <ul>
+                        <li>{{$employer->name}}</li>
+                        <li>{{$employer->desc}}</li>
+                        <li>{{$employer->sector}}</li>
+                        <li>{{$employer->website}}</li>
+                      </ul>
                 </div>
             </div>
          </div>

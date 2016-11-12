@@ -21,6 +21,9 @@ class CreateUserTable extends Migration
             $table->binary('pic');
             $table->string('skills');
             $table->string('desc');
+            $table->double('age');
+            $table->string('time_available');
+            $table->string('preferred_field');
             $table->string('status');
             $table->timestamps();
         });
@@ -33,6 +36,9 @@ class CreateUserTable extends Migration
             'pic' => 10,
             'skills' => "IT",
             'desc' => "Developer",
+            'age' => 22,
+            'time_available' => "9AM - 9PM",
+            'preferred_field' => "Web Development",
             'status' => "Premium",
         ));
         DB::table('users')->insert(
@@ -43,6 +49,9 @@ class CreateUserTable extends Migration
             'pic' => 10,
             'skills' => "IT",
             'desc' => "Developer",
+            'age' => 21,
+            'time_available' => "9AM - 9PM",
+            'preferred_field' => "Web Development",
             'status' => "Premium",
         ));
         DB::table('users')->insert(
@@ -53,6 +62,9 @@ class CreateUserTable extends Migration
             'pic' => 10,
             'skills' => "Designer",
             'desc' => "Designer",
+            'age' => 22,
+            'time_available' => "9AM - 9PM",
+            'preferred_field' => "Design",
             'status' => "Premium",
         ));
         DB::table('users')->insert(
@@ -63,6 +75,9 @@ class CreateUserTable extends Migration
             'pic' => 10,
             'skills' => "Business",
             'desc' => "CEO",
+            'age' => 24,
+            'time_available' => "9AM - 9PM",
+            'preferred_field' => "Business",
             'status' => "Premium",
         ));
         DB::table('users')->insert(
@@ -73,6 +88,9 @@ class CreateUserTable extends Migration
             'pic' => 10,
             'skills' => "IT",
             'desc' => "Developer",
+            'age' => 24,
+            'time_available' => "9AM - 9PM",
+            'preferred_field' => "IT",
             'status' => "Premium",
         ));
     }

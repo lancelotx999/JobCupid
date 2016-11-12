@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('titleTag')
-    Jobcupid Login
+    Jobcupid Register
 @endsection
 
 @section('keywordsTag')
@@ -33,15 +33,30 @@
         <div class="col-xs-6 col-sm-4">
             <h1>LOGO </h1>
              <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
-             <form method="POST" action="{{ url('/login/') }}">
-                {{ csrf_field() }}
+             <form>
                 <div class="form-group">
-                    <label for="Email">Email</label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+                    <label for="name" style=" text-align: left;">Name</label>
+                    <input type="name" class="form-control" id="name" placeholder="name">
+                </div> 
+                <div class="form-group">
+                    <label for="Email" style=" text-align: left;">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
-                    <label for="Password">Password</label>
-                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                    <label for="Password" style=" text-align: left;">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group">
+                    <label for="Skills" style=" text-align: left;">Skills</label>
+                    <input type="skills" class="form-control" id="skills" placeholder="skills">
+                </div>
+                <div class="form-group">
+                    <label for="Description" style=" text-align: left;">Description</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="Profile Image" style=" text-align: left;">Profile Image</label>
+                    <input type="file" id="exampleInputFile">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 
@@ -52,5 +67,4 @@
     </div>
   
   </div>
-
 @endsection

@@ -20,6 +20,8 @@ class CreateEmployerTable extends Migration
             $table->string('password');
             $table->binary('pic');
             $table->string('desc');
+            $table->string('sector');
+            $table->string('website');
             $table->string('status');
             $table->timestamps();
         });
@@ -31,6 +33,8 @@ class CreateEmployerTable extends Migration
             'password' => "ET",
             'pic' => 10,
             'desc' => "Founder of JobCupid",
+            'sector' => "Human Resources",
+            'website' => "www.jobcupid.com.my",
             'status' => "Premium",
         ));
 
