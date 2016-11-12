@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-     <meta name='title' content="@yield('titleTag')">
-    <meta name='keywords' content="@yield('keywordsTag')">
-    <meta name="description" content="@yield('descriptionTag')">
+    <meta name='title' content="Jobcupid">
+    <meta name='keywords' content="part time, job, free">
+    <meta name="description" content="Jobcupid, your part time helper">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jobcupid</title>
 
@@ -21,21 +21,26 @@
     <![endif]-->
   </head>
   <body>
-    <!-- Header -->
-    @yield('header')
-    <!-- End of Header -->
 
-    <!-- Content of the page -->
-    @yield('content_page')
-    <!-- End of the content of the page -->
-
-    <!-- Footer -->
-    @yield('footer')
-    <!-- End of Footer -->
+    <div id="app">
+      <h1>Hello App!</h1>
+        <p>
+          <!-- use router-link component for navigation. -->
+          <!-- specify the link by passing the `to` prop. -->
+          <!-- <router-link> will be rendered as an `<a>` tag by default -->
+          <router-link to="/">Go to /</router-link>
+          <router-link to="/people">Go to /people</router-link>
+        </p>
+        <!-- route outlet -->
+        <!-- component matched by the route will render here -->
+        <router-view></router-view>
+    </div>          
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="{{ URL::to('/js/bootstrap.min.js') }} "></script>
+    <!-- Main Vue.js file for SPA -->
+    <script type="text/javascript" src="/js/app.js"></script>
   </body>
 </html>

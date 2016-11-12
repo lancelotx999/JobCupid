@@ -13,31 +13,30 @@ require('./bootstrap');
  * the application, or feel free to tweak this setup for your needs.
  */
 
-Vue.use(VueRouter)
-Vue.use(VueResource)
-
-const App 		= Vue.extend({})
-
 const Home = {
-  template: 'Welcome to the <b>home page</b>!'
+  template: '<div>Welcome to the <b>home page</b>!</div>'
 }
 
-const People = {
-  template: 'Look at all the people who work here!'
-}
+import People  from './components/Index.vue'
 
 const routes = [
-	{ path: '/', component: Home },
-	{ path: '/people', component: People }
+	{ 
+		path: '/', 
+		component: Home 
+	},
+	{ 
+		path: '/people', 
+		component: People 
+	}
 ]
 
 const router = new VueRouter({
   routes // short for routes: routes
 })
 
-// 4. Create and mount the root instance.
-// Make sure to inject the router with the router option to make the
-// whole app router-aware.
+// Create and mount the root instance.
+// Make sure to inject the router with the router 
+// option to make the whole app router-aware.
 const app = new Vue({
   router
 }).$mount('#app')
