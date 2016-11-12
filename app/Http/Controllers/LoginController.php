@@ -31,20 +31,34 @@ class LoginController extends Controller
 
 
         foreach ($users as $user) {
+            // return $user->email;
+            // return $request->email;
 
             if ($request->email == $user->email && $request->password == $user->password) {
-                return "login pass";
+                // return "login pass";
                 //success login code here
                 // return redirect('/');
+                // $data = [];
+                $data['user'] = User::find($user->id);
+
+                // return User::all();
+
+                // return $data;
+                
+                return view('/pages/user_main',$data);
             }
         }
 
         foreach ($employers as $employer) {
 
             if ($request->email == $employer->email && $request->password == $employer->password) {
-                return "login pass";
+                // return "login pass";
                 //success login code here
                 // return redirect('/');
+                $data = [];
+                $data['employer'] = Employer::find($employer->id);
+                return view('/pages/employer_main', $data);
+                // return $data;
             }
         }
         // return "fail";

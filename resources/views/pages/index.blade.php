@@ -55,7 +55,7 @@
     </div>
     <div class="row">
         <button type="submit" class="btn btn-default">Continue</button>
-         <div style="padding:10px;">Already have a account?<a href={{}}>Login</a></div>
+         <div style="padding:10px;">Already have a account?<a href='/login'>Login</a></div>
     </div>
     </div>
   </div>
