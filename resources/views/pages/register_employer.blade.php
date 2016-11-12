@@ -29,8 +29,8 @@
 @section('content_page')
   <div class="container-fluid text-center">
     <div class="row">
-        <div class="col-xs-6 col-sm-4"></div>
-        <div class="col-xs-6 col-sm-4">
+        <div class="col-xs-2 col-sm-4"></div>
+        <div class="col-xs-10 col-sm-4">
             <h1>LOGO </h1>
              <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
              <form>
@@ -47,6 +47,14 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="form-group">
+                    <label for="Sector" style=" text-align: left;">Sector</label>
+                    <input type="sector" class="form-control" id="sector" placeholder="sector">
+                </div>
+                <div class="form-group">
+                    <label for="Website" style=" text-align: left;">Website</label>
+                    <input type="website" class="form-control" id="website" placeholder="website">
+                </div>
+                <div class="form-group">
                     <label for="Description" style=" text-align: left;">Description</label>
                     <textarea class="form-control" rows="3"></textarea>
                 </div>
@@ -59,7 +67,7 @@
         </div>
         <!-- Optional: clear the XS cols if their content doesn't match in height -->
         <div class="clearfix visible-xs-block"></div>
-        <div class="col-xs-6 col-sm-4"></div>
+        <div class="col-xs-2 col-sm-4"></div>
     </div>
   
   </div>

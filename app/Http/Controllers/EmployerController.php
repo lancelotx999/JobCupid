@@ -18,7 +18,7 @@ class EmployerController extends Controller
         $data = [];
         $data['current_user'] = $request->session()->get('current_user');
         // $data['employer'] = Employer::all();
-        $data['user'] = User::all();
+        $data['users'] = User::all();
         $data['job'] = Job::all();
 
         return view('/pages/employer_main', $data);

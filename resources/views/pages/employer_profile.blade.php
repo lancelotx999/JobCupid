@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-user" href="/emp/profile"></a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="#" style="position: fixed; right: 0;top:8px">Done</a>
+                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="/chat" style="position: fixed; right: 0;top:8px"></a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -31,31 +31,33 @@
 
 @section('content_page')
  <div class="container-fluid">
-    <div class="row row-xs-5">
-        <div class="col-md-2 col-md-offset-5">
-            <h3>Profile Image</h3>
+     <div class="row row-xs-5" >
+        <div class="col-md-4"></div>
+        <div class="col-md-4 panel panel-default text-center" style="min-height:250px;">
+            <h3>Employer Profile Image</h3>
         </div>
-    </div>
-    <div class="row row-xs-5 panel panel-footer text-center navbar-fixed-bottom" style="background-color:#e5f2ef;">
-        <!-- <div class="row">
-            <div style="font-family:Segoe UI Semilight;font-size:30px;">James, 18</div>
-        </div> -->
-        <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
-           <div class="col-xs-4 col-sm-4"></div>
-           <div class="col-xs-10 col-sm-4">
-               <ul>
-                  <li>Name: {{$employer->name}}</li>
-                  <li>Description: {{$employer->desc}}</li>
-                  <li>Sector:{{$employer->sector}}</li>
-                  <li>Website: {{$employer->website}}</li>
-               </ul>
-           </div>
-           <div class="clearfix visible-xs-block"></div>
-           <div class="col-xs-4 col-sm-4"></div>
-        </div>
-         <div class="row">
-            <button type="submit" class="btn btn-circle btn-lg  btn-primary">Log Out</button>
+        <div class="col-md-4"></div>
+     </div>
+     <div class="row row-xs-5 text-center" >
+         <div class="col-md-4"></div>
+         <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
+            <div class="row">
+                <div style="font-family:Segoe UI Light;font-size:20px;">
+                      <ul>
+                        <li>{{$current_user->name}}</li>
+                        <li>{{$current_user->desc}}</li>
+                        <li>{{$current_user->sector}}</li>
+                        <li>{{$current_user->website}}</li>
+                      </ul>
+                </div>
+            </div>
          </div>
+      </div>
+       <div class="col-md-6 col-md-offset-5">
+            <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
+            <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
+            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
+        </div>
     </div>
-  </div>
+
 @endsection

@@ -17,9 +17,9 @@ class UserController extends Controller
     {
         $data = [];
         $data['current_user'] = $request->session()->get('current_user');
-        $data['employer'] = Employer::all();
+        $data['employers'] = Employer::all();
         // $data['user'] = User::all();
-        $data['job'] = Job::all();
+        $data['jobs'] = Job::all();
 
         return view('/pages/user_main', $data);
     }

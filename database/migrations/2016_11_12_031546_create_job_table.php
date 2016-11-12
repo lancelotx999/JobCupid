@@ -20,7 +20,7 @@ class CreateJobTable extends Migration
             $table->string('requirements');
             $table->string('location');
             $table->string('duration');
-            $table->date('start_date');
+            $table->string('start_date');
             $table->string('salary');
             $table->string('status');
             $table->double('employer_id');
@@ -35,7 +35,7 @@ class CreateJobTable extends Migration
             'requirements' => "IT Background for developer position",
             'location' => "Kuching",
             'duration' => "1 week",
-            'start_date' => 12/12/12,
+            'start_date' => '11/11/16',
             'salary' => "RM20/hour",
             'status' => "Unfilled",
             'employer_id' => "IT",
@@ -50,7 +50,7 @@ class CreateJobTable extends Migration
             'requirements' => "Design background for design position",
             'location' => "Kuala Lumpur",
             'duration' => "2 week",
-            'start_date' => 12/12/12,
+            'start_date' => '12/11/16',
             'salary' => "RM20/hour",
             'status' => "Unfilled",
             'employer_id' => "IT",
@@ -65,7 +65,7 @@ class CreateJobTable extends Migration
             'requirements' => "Experience in promoting",
             'location' => "Kuching",
             'duration' => "1 week",
-            'start_date' => 12/12/12,
+            'start_date' => '13/11/16',
             'salary' => "RM10/hour",
             'status' => "Unfilled",
             'employer_id' => "IT",
