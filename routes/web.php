@@ -12,29 +12,52 @@
 */
 
 Route::get('/', function () {
-    return view('/test');
+    return view('./pages/index');
 });
-// Login controller
+
 Route::get('/login', function () {
-    return view('/pages/login');
+    return view('./pages/login');
 });
 
 Route::post('/login', 'LoginController@authenticate');
 
-// Route::post('/user_main', 'LoginController@authenticate');
+Route::get('/emp/main', function () {
+    return view('./pages/employer_main');
+});
+
 // Route::post('/employer_main', 'LoginController@authenticate');
 
-// Route::get('/employer_main', function () {
-//     return view('/pages/employer_main');
-// });
+Route::get('/emp/profile', function () {
+    return view('./pages/employer_profile');
+});
 
-// Route::get('/user_main', function () {
-//     return view('/pages/user_main');
-// });
+Route::get('/register/employer', function () {
+	return view('./pages/register_employer');
+});
 
-// // Stock controller
-// Route::get('/stock', 'StockController@index');
-// Route::get('/stock/{id}', 'StockController@show');
-// Route::get('/stock/create/{name}+{price}+{stock}', 'StockController@store');
-// Route::get('/stock/update/{id}/{name}+{price}+{stock}+{date}', 'StockController@update');
-// Route::get('/stock/delete/{id}', 'StockController@destroy');
+Route::get('/user/main', function () {
+    return view('./pages/user_main');
+});
+
+// Route::post('/user_main', 'LoginController@authenticate');
+
+Route::get('/user/profile', function () {
+    return view('./pages/user_profile');
+});
+
+Route::get('/register/user', function () {
+	return view('./pages/register_user');
+});
+
+Route::get('/boost', function () {
+	return view('./pages/boost');
+});
+
+Route::get('/chat', function () {
+	return view('./pages/chat');
+});
+
+Route::get('/filter', function () {
+	return view('./pages/filter');
+});
+

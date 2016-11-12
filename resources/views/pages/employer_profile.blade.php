@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="/emp/main">Back</a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="#" style="position: fixed; right: 0;top:8px">Done</a>
+                    <a class="navbar-brand" href="/emp/main" style="position: fixed; right: 0;top:8px">Done</a>
               </div>
               
             </div><!-- /.container-fluid -->
