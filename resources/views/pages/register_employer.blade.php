@@ -33,34 +33,35 @@
         <div class="col-xs-10 col-sm-4">
             <h1>LOGO </h1>
              <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
-             <form>
+             <form method="POST" action="{{ url('/employer/') }}">
+             {{ csrf_field() }}
                 <div class="form-group">
                     <label for="companyName" style=" text-align: left;">Company Name</label>
-                    <input type="companyName" class="form-control" id="company_name" placeholder="Password">
+                    <input type="companyName" class="form-control" name="name" id="company_name" placeholder="Name">
                 </div> 
                 <div class="form-group">
                     <label for="Email" style=" text-align: left;">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="Password" style=" text-align: left;">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="Sector" style=" text-align: left;">Sector</label>
-                    <input type="sector" class="form-control" id="sector" placeholder="sector">
+                    <input type="sector" class="form-control" name="sector" id="sector" placeholder="sector">
                 </div>
                 <div class="form-group">
                     <label for="Website" style=" text-align: left;">Website</label>
-                    <input type="website" class="form-control" id="website" placeholder="website">
+                    <input type="website" class="form-control" name="website" id="website" placeholder="website">
                 </div>
                 <div class="form-group">
                     <label for="Description" style=" text-align: left;">Description</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea class="form-control" name="description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="Profile Image" style=" text-align: left;">Profile Image</label>
-                    <input type="file" id="exampleInputFile">
+                    <input type="file" name="uploadfile" id="exampleInputFile">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 
