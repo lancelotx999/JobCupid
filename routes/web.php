@@ -12,20 +12,25 @@
 */
 
 Route::get('/', function () {
+    return view('/pages/index');
+});
+// Login controller
+Route::get('/login', function () {
     return view('/pages/login');
 });
 
-// Route::get('/employee/create', function () {
-//     return view('employeecreate');
+Route::post('/login', 'LoginController@authenticate');
+
+// Route::post('/user_main', 'LoginController@authenticate');
+// Route::post('/employer_main', 'LoginController@authenticate');
+
+// Route::get('/employer_main', function () {
+//     return view('/pages/employer_main');
 // });
 
-// Route::get('/', 'MainController@index');
-
-
-// Login controller
-Route::get('/login/{email}+{password}', 'LoginController@authenticate');
-
-Route::post('/login', 'LoginController@authenticate');
+// Route::get('/user_main', function () {
+//     return view('/pages/user_main');
+// });
 
 // // Stock controller
 // Route::get('/stock', 'StockController@index');
