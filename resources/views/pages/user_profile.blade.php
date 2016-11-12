@@ -45,9 +45,12 @@
            <div class="col-xs-4 col-sm-4"></div>
            <div class="col-xs-10 col-sm-4">
                <ul>
-                   <li>email@email.com</li>
-                   <li>012xxxxxxx</li>
-                   <li>Status</li>
+                  <li>Name: {{$user->name}}</li>
+                  <li>Age: {{$user->age}}</li>
+                  <li>Time Available: {{$user->time_available}}</li>
+                  <li>Preferred Field: {{$user->preferred_field}}</li>
+                  <li>Skills: {{$user->skills}}</</li>
+                  <li>Description: {{$user->desc}}</</li>
                </ul>
            </div>
            <div class="clearfix visible-xs-block"></div>

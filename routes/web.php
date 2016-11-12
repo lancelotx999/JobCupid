@@ -19,6 +19,11 @@ Route::get('/login', function () {
     return view('/pages/login');
 });
 
+
+
+Route::get('/employer', 'EmployerController@index');
+Route::get('/employee', 'UserController@index');
+
 Route::post('/login', 'LoginController@authenticate');
 
 // Route::post('/user_main', 'LoginController@authenticate');

@@ -48,12 +48,12 @@
             <div class="row">
                 <div style="font-family:Segoe UI Light;font-size:20px;">
                      <ul>
-                        <li>{{$user->name}}</li>
-                        <li>{{$user->age}}</li>
-                        <li>{{$user->time_available}}</li>
-                        <li>{{$user->preferred_field}}</li>
-                        <li>{{$user->skills}}</</li>
-                        <li>{{$user->desc}}</</li>
+                        <li>{{$current_user->name}}</li>
+                        <li>{{$current_user->age}}</li>
+                        <li>{{$current_user->time_available}}</li>
+                        <li>{{$current_user->preferred_field}}</li>
+                        <li>{{$current_user->skills}}</</li>
+                        <li>{{$current_user->desc}}</</li>
                      </ul>
                 </div>
             </div>

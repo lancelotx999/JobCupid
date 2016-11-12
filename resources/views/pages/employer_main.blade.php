@@ -45,10 +45,10 @@
             <div class="row">
                 <div style="font-family:Segoe UI Light;font-size:20px;">
                       <ul>
-                        <li>{{$employer->name}}</li>
-                        <li>{{$employer->desc}}</li>
-                        <li>{{$employer->sector}}</li>
-                        <li>{{$employer->website}}</li>
+                        <li>{{$current_user->name}}</li>
+                        <li>{{$current_user->desc}}</li>
+                        <li>{{$current_user->sector}}</li>
+                        <li>{{$current_user->website}}</li>
                       </ul>
                 </div>
             </div>

@@ -37,17 +37,17 @@
         </div>
     </div>
     <div class="row row-xs-5 panel panel-footer text-center navbar-fixed-bottom" style="background-color:#e5f2ef;">
-        <div class="row">
+        <!-- <div class="row">
             <div style="font-family:Segoe UI Semilight;font-size:30px;">James, 18</div>
-        </div>
+        </div> -->
         <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
            <div class="col-xs-4 col-sm-4"></div>
            <div class="col-xs-10 col-sm-4">
                <ul>
-                   <li>Past Qualification 1</li>
-                   <li>Past Qualification 2</li>
-                   <li>Past Qualification 3</li>
-                   <li>Available from 12.00p.m.-3.00p.m.</li>
+                  <li>Name: {{$employer->name}}</li>
+                  <li>Description: {{$employer->desc}}</li>
+                  <li>Sector:{{$employer->sector}}</li>
+                  <li>Website: {{$employer->website}}</li>
                </ul>
            </div>
            <div class="clearfix visible-xs-block"></div>

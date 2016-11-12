@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
+use App\Job;
+use App\Employer;
 class UserController extends Controller
 {
     /**
@@ -11,9 +13,15 @@ class UserController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        //
+        $data = [];
+        $data['current_user'] = $request->session()->get('current_user');
+        $data['employer'] = Employer::all();
+        // $data['user'] = User::all();
+        $data['job'] = Job::all();
+
+        return view('/pages/user_main', $data);
     }
 
     /**
