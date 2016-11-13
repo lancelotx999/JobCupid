@@ -31,8 +31,8 @@
     <div class="row">
         <div class="col-xs-2 col-sm-4"></div>
         <div class="col-xs-10 col-sm-4">
-            <h1>LOGO </h1>
-             <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
+            <!-- <h1>LOGO </h1> -->
+             <img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image" style="width: 50%; margin: 0 auto;"> <br />
              <form method="POST" action="{{ url('/employer/') }}">
              {{ csrf_field() }}
                 <div class="form-group">

@@ -10,6 +10,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Jobcupid</title>
 
+    <link href="/css/app.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="{{ URL::to('/css/bootstrap.min.css') }}" rel="stylesheet">
 

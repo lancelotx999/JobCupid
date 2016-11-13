@@ -31,48 +31,48 @@
     <div class="row">
         <div class="col-xs-2 col-sm-4"></div>
         <div class="col-xs-10 col-sm-4">
-            <h1>LOGO </h1>
-             <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
+            <!-- <h1>LOGO </h1> -->
+             <img src="{{ asset('/image/logo.png') }}" class="logo img-responsive img-circle" alt="Responsive image"> <br />
              <form method="POST" action="{{ url('/user/') }}">
              {{ csrf_field() }}
-                <div class="form-group">
-                    <label for="name" style=" text-align: left;">Name</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="name">Name</label>
                     <input type="name" class="form-control" name="name" id="name" placeholder="Name">
                 </div> 
-                <div class="form-group">
-                    <label for="Email" style=" text-align: left;">Email</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Email">Email</label>
                     <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
                 </div>
-                <div class="form-group">
-                    <label for="Password" style=" text-align: left;">Password</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Password">Password</label>
                     <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                 </div>
-                <div class="form-group">
-                    <label for="Age" style=" text-align: left;">Age</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Age">Age</label>
                     <input type="age" class="form-control" name="age" id="age" placeholder="Age">
                 </div>
-                <div class="form-group">
-                    <label for="Time Available" style=" text-align: left;">Time Available</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Time Available">Time Available</label>
                     <input type="time" class="form-control" name="time" id="time" placeholder="time">
                 </div>
-                <div class="form-group">
-                    <label for="Prefer Field" style=" text-align: left;">Preferred Field</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Prefer Field">Preferred Field</label>
                     <input type="prefer_field" class="form-control" name="field" id="prefer_field" placeholder="prefer_field">
                 </div>
-                <div class="form-group">
-                    <label for="Skills" style=" text-align: left;">Skills</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Skills">Skills</label>
                     <input type="skills" class="form-control" name="skills" id="skills" placeholder="skills">
                 </div>
 
-                <div class="form-group">
-                    <label for="Description" style=" text-align: left;">Description</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Description">Description</label>
                     <textarea class="form-control" name="desc" rows="3"></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="Profile Image" style=" text-align: left;">Profile Image</label>
+                <div class="form-group" style=" text-align: left;">
+                    <label for="Profile Image">Profile Image</label>
                     <input type="file" name="pic" id="exampleInputFile">
                 </div>
-                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="submit" class="btn btn-default btn-primary" style=" text-align: left;">Submit</button>
             </form> 
         </div>
         <!-- Optional: clear the XS cols if their content doesn't match in height -->
