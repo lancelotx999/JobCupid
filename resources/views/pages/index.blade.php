@@ -17,7 +17,7 @@
     <div class="row">
         <div class="col-xs-6 col-sm-4"></div>
         <div class="col-xs-6 col-sm-4">
-            <h1>LOGO</h1>
+            <h2>LOGO</h2>
             <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
         </div>
         <!-- Optional: clear the XS cols if their content doesn't match in height -->
@@ -35,7 +35,7 @@
                     Job Seeker
                 </div>
                 </div>
-                <h3 class="text-capitalize" style="text-transform:uppercase;">I need a job</h3>
+                <h3 class="text-capitalize" style="text-transform:uppercase;font-size:18px;">I need a job</h3>
             </div>
 
             <div class="col-xs-2">          
@@ -50,7 +50,7 @@
                     Job Provider
                 </div>
                 </div>
-                <h3 class="text-capitalize" style="text-transform:uppercase;">I need a worker</h3>
+                <h3 class="text-capitalize" style="text-transform:uppercase;font-size:18px;">I need a worker</h3>
             </div>
     </div>
     <div class="row">
