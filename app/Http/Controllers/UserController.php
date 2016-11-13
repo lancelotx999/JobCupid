@@ -42,7 +42,24 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new User;
+
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = $request->password;
+        $user->age = $request->age;
+        $user->time = $request->time;
+        $user->field = $request->field;
+        $user->skills = $request->skills;
+        $user->description = $request->description;
+        $user->uploadfile = $request->uploadfile;
+
+        $user->save();
+
+        // $data = [];
+        // $data['users'] = User::all();
+
+        return view('./pages/login');
     }
 
     /**

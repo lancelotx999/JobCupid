@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\User;
 use App\Job;
 use App\Employer;
@@ -42,7 +43,22 @@ class EmployerController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $employer = new Employer;
+
+        $employer->name = $request->name;
+        $employer->email = $request->email;
+        $employer->password = $request->password;
+        $employer->sector = $request->sector;
+        $employer->website = $request->website;
+        $employer->description = $request->description;
+        $employer->uploadfile = $request->uploadfile;
+
+        $employer->save();
+
+        // $data = [];
+        // $data['employers'] = Employer::all();
+
+        return view('./pages/login');
     }
 
     /**

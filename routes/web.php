@@ -40,6 +40,8 @@ Route::get('/register/employer', function () {
 	return view('./pages/register_employer');
 });
 
+Route::post('/employer', 'EmployerController@store');
+
 Route::get('/user/main', function () {
     return view('./pages/user_main');
 });
@@ -53,6 +55,8 @@ Route::get('/user/profile', function () {
 Route::get('/register/user', function () {
 	return view('./pages/register_user');
 });
+
+Route::post('/user', 'UserController@store');
 
 Route::get('/boost', function () {
 	return view('./pages/boost');

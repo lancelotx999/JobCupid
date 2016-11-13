@@ -33,43 +33,44 @@
         <div class="col-xs-10 col-sm-4">
             <h1>LOGO </h1>
              <!--<img src="{{ asset('/image/logo.png') }}" class="img-responsive img-circle" alt="Responsive image"> -->
-             <form>
+             <form method="POST" action="{{ url('/user/') }}">
+             {{ csrf_field() }}
                 <div class="form-group">
                     <label for="name" style=" text-align: left;">Name</label>
-                    <input type="name" class="form-control" id="name" placeholder="name">
+                    <input type="name" class="form-control" name="name" id="name" placeholder="Name">
                 </div> 
                 <div class="form-group">
                     <label for="Email" style=" text-align: left;">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="Password" style=" text-align: left;">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
                 </div>
                 <div class="form-group">
                     <label for="Age" style=" text-align: left;">Age</label>
-                    <input type="age" class="form-control" id="age" placeholder="Age">
+                    <input type="age" class="form-control" name="age" id="age" placeholder="Age">
                 </div>
                 <div class="form-group">
                     <label for="Time Available" style=" text-align: left;">Time Available</label>
-                    <input type="time" class="form-control" id="age" placeholder="time">
+                    <input type="time" class="form-control" name="time" id="time" placeholder="time">
                 </div>
                 <div class="form-group">
                     <label for="Prefer Field" style=" text-align: left;">Prefer Field</label>
-                    <input type="prefer_field" class="form-control" id="prefer_field" placeholder="prefer_field">
+                    <input type="prefer_field" class="form-control" name="field" id="prefer_field" placeholder="prefer_field">
                 </div>
                 <div class="form-group">
                     <label for="Skills" style=" text-align: left;">Skills</label>
-                    <input type="skills" class="form-control" id="skills" placeholder="skills">
+                    <input type="skills" class="form-control" name="skills" id="skills" placeholder="skills">
                 </div>
 
                 <div class="form-group">
                     <label for="Description" style=" text-align: left;">Description</label>
-                    <textarea class="form-control" rows="3"></textarea>
+                    <textarea class="form-control" name="description" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="Profile Image" style=" text-align: left;">Profile Image</label>
-                    <input type="file" id="exampleInputFile">
+                    <input type="file" name="uploadfile" id="exampleInputFile">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 
