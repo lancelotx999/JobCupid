@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-user" href="#"></a>
+                    <a class="navbar-brand glyphicon glyphicon-user" href="/emp/profile"></a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="#" style="position: fixed; right: 0;top:8px"></a>
+                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="/chat" style="position: fixed; right: 0;top:8px"></a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -93,12 +93,7 @@
             </div>
          </div>
       </div>
-
-
-
-
-
-    
+   
     </div>
     
     <!-- Controls -->
@@ -115,7 +110,7 @@
 </div>
 <div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
            <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
-            <button type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></button>
+           <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
             <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
     </div>
 <script>

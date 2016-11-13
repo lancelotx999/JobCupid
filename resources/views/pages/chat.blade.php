@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="#" style="position: fixed; right: 0;top:8px">LOGO</a>
+                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">LOGO</a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -40,4 +40,9 @@
           <button type="submit" class="btn btn-circle btn-xl btn-primary text-uppercase">talk to the employer now</button>
      </div>
   </div>
+  <script type="text/javascript">
+    function goBack() {
+      window.history.go(-1);
+    }
+  </script>
 @endsection
