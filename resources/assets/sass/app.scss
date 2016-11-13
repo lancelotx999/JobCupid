@@ -108,3 +108,8 @@
     font-weight: 700;
     src: local("Segoe UI Bold Italic");
 }
+
+.centered {
+    left: 50%;
+    transform: translateX(-50%);
+}
