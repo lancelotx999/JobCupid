@@ -14,7 +14,7 @@
 
 @section('header')
     <header>
-        <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
+        <nav class="navbar navbar-default">
           <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -44,30 +44,32 @@
 
       <div class="item active">
         <div class="row row-xs-5">
-          <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px">
-             <h3>Job Title</h3>
-              <h3>Job Description</h3>
-          </div>
-        </div>
-        <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
-          <div class="row">
-            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">StartUP, Kuching</div>
-          </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
-           <div class="col-xs-4 col-sm-4"></div>
-           <div class="col-xs-10 col-sm-4">
-               <ul>
-                  <li>email@email.com</li>
-                   <li>012xxxxxxx</li>
-                   <li>Status</li>
-                   <li>Sector</li>
-                   <li>Website</li>
-               </ul>
-           </div>
-           <div class="clearfix visible-xs-block"></div>
-           <div class="col-xs-4 col-sm-4"></div>
-        </div>
-        </div>
+                    <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px;">
+                        <p>Job Title: I'mma job</p>
+                        <p>Job Description: Job is my cue</p>
+                        <p>Job Requirements: A job</p>
+                        <p>Job Location: Land of the Jobs</p>
+                        <p>Job Duration: Job's done</p>
+                    </div>
+                </div>
+            
+                <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
+                        <div class="row">
+                            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">Doge, Kuching</div>
+                        </div>
+                        <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
+                            <div class="col-xs-4 col-sm-4"></div>
+                                <div class="col-xs-10 col-sm-4">
+                                    <ul>
+                                        <li>Description: It's a job in Kuching</li>
+                                        <li>Sector: City</li>
+                                        <li>Website: findajob.my</li>
+                                    </ul>
+                                </div>
+                            <div class="clearfix visible-xs-block"></div>
+                            <div class="col-xs-4 col-sm-4"></div>
+                        </div>
+                    </div>
       </div>
 
 
@@ -123,7 +125,7 @@
   </div>
 
 </div>
-<div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
+<div class="row text-center panel panel-footer navbar-fixed-bottom">
             
     </div>
 <script>
@@ -145,7 +147,7 @@
 @endsection
 
 @section('footer')
-    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef; padding: 3% 0;">
+    <div class="text-center footer navbar-fixed-bottom" style="padding: 3% 0;">
            <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
             <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary" style="margin: 0 10%"></a>
             <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>

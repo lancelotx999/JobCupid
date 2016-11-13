@@ -14,7 +14,7 @@
 
 @section('header')
     <header>
-        <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
@@ -63,7 +63,7 @@
 @endsection
 
 @section('footer')
-    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef; padding: 3%;">
+    <div class="text-center footer navbar-fixed-bottom" style="padding: 3%;">
         <a href="/login" class="btn btn-circle btn-lg  btn-primary">Log Out</a>
 @endsection
 

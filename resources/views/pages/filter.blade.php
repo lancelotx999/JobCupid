@@ -14,7 +14,7 @@
 
 @section('header')
     <header>
-        <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -25,7 +25,7 @@
                     ></a>
                 </div>
               
-              <div class="navbar-brand" style="position: absolute; left: 40.3%; top: 2%; color: #fff"">Filter</div>
+              <div class="navbar-brand" style="position: absolute; left: 40.3%; top: 2%; color: #fff">Filter</div>
               </div>
             </div><!-- /.container-fluid -->
         </nav>

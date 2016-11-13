@@ -14,7 +14,7 @@
 
 @section('header')
     <header>
-        <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
+        <nav class="navbar navbar-default">
           <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -44,28 +44,33 @@
 
       <div class="item active">
         <div class="row row-xs-5">
-          <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px;" >
-            <h3>Profile Image</h3>
+              <div class="col-md-4"></div>
+              <div class="col-md-4 panel panel-default text-center" style="min-height:200px;">
+                <h3>Profile Image</h3>
+              </div>
+            <div class="col-md-4"></div>
           </div>
-        </div>
-        <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
-          <div class="row">
-            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">John Doe, 20</div>
+          <div class="row row-xs-5 text-center" style="min-height:200px">
+              <div class="col-md-4"></div>
+            <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
+                <div class="row">
+                    <div style="font-family:Segoe UI Semilight;font-size:1.5em;">Doge, Year of Doge</div>
+                </div>
+                <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
+                 <div class="col-xs-4 col-sm-4"></div>
+                 <div class="col-xs-10 col-sm-4">
+                     <ul>
+                        <li>Time Available: Everday</li>
+                        <li>Preferred Field: Doge duty</li>
+                        <li>Skills: Doge meme</li>
+                        <li>Description: I'm a doge</li>
+                     </ul>
+                 </div>
+                 <div class="clearfix visible-xs-block"></div>
+                 <div class="col-xs-4 col-sm-4"></div>
+              </div>
+            </div>
           </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
-           <div class="col-xs-4 col-sm-4"></div>
-           <div class="col-xs-10 col-sm-4">
-               <ul>
-                  <li>Time Available: Anytime</li>
-                  <li>Preferred Field: Anything</li>
-                  <li>Skills: Everything</li>
-                  <li>Description: Nothing</li>
-               </ul>
-           </div>
-           <div class="clearfix visible-xs-block"></div>
-           <div class="col-xs-4 col-sm-4"></div>
-        </div>
-        </div>
       </div>
       @foreach ($users as $user)
         <div class="item">
@@ -136,7 +141,7 @@
 
 
 @section('footer')
-    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef; padding: 3% 0;">
+    <div class="text-center footer navbar-fixed-bottom" style="padding: 3% 0;">
            <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
             <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary" style="margin: 0 10%"></a>
             <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>

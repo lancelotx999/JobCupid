@@ -5799,13 +5799,12 @@ img {
 div.navbar-header {
   background-color: #8843d8; }
 
-.btn,
-.btn-primary,
-.btn-primary:hover,
-.btn-primary:visited,
-.btn-primary:active,
-.btn-primary:focus {
-  background-color: #8843d8;
-  border-color: #8843d8; }
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+  background-color: #8843d8 !important;
+  border-color: #8843d8 !important; }
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  color: #8843d8 !important; }
 
 /*# sourceMappingURL=app.css.map */
