@@ -109,11 +109,7 @@
   </div>
 
 </div>
-<div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
-           <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
-            <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
-            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
-    </div>
+
 <script>
     $(".carousel").swipe({
 
@@ -127,4 +123,12 @@
 
 });
 </script>
+@endsection
+
+@section('footer')
+    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
+           <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
+            <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
+            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
+    </div>
 @endsection
