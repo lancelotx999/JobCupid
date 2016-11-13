@@ -44,32 +44,32 @@
 
       <div class="item active">
         <div class="row row-xs-5">
-                    <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px;">
-                        <p>Job Title: I'mma job</p>
-                        <p>Job Description: Job is my cue</p>
-                        <p>Job Requirements: A job</p>
-                        <p>Job Location: Land of the Jobs</p>
-                        <p>Job Duration: Job's done</p>
-                    </div>
+            <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px;">
+                <p>Job Title: I'mma job</p>
+                <p>Job Description: Job is my cue</p>
+                <p>Job Requirements: A job</p>
+                <p>Job Location: Land of the Jobs</p>
+                <p>Job Duration: Job's done</p>
+            </div>
+        </div>
+    
+        <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
+                <div class="row">
+                    <div style="font-family:Segoe UI Semilight;font-size:1.5em;">Doge, Kuching</div>
                 </div>
-            
-                <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
-                        <div class="row">
-                            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">Doge, Kuching</div>
-                        </div>
-                        <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
-                            <div class="col-xs-4 col-sm-4"></div>
-                                <div class="col-xs-10 col-sm-4">
-                                    <ul>
-                                        <li>Description: It's a job in Kuching</li>
-                                        <li>Sector: City</li>
-                                        <li>Website: findajob.my</li>
-                                    </ul>
-                                </div>
-                            <div class="clearfix visible-xs-block"></div>
-                            <div class="col-xs-4 col-sm-4"></div>
-                        </div>
-                    </div>
+                <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
+                <div class="col-xs-4 col-sm-4"></div>
+                <div class="col-xs-10 col-sm-4">
+                <ul>
+                  <li>Description: It's a job in Kuching</li>
+                  <li>Sector: City</li>
+                  <li>Website: findajob.my</li>
+                </ul>
+            </div>
+            <div class="clearfix visible-xs-block"></div>
+            <div class="col-xs-4 col-sm-4"></div>
+          </div>
+        </div>
       </div>
 
 
@@ -125,9 +125,7 @@
   </div>
 
 </div>
-<div class="row text-center panel panel-footer navbar-fixed-bottom">
             
-    </div>
 <script>
     $(".carousel").swipe({
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
