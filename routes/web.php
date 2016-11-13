@@ -19,8 +19,6 @@ Route::get('/login', function () {
     return view('./pages/login');
 });
 
-
-
 Route::get('/employer', 'EmployerController@index');
 Route::get('/employee', 'UserController@index');
 

@@ -19,7 +19,7 @@
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
                 
-                <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                <a class="navbar-brand glyphicon glyphicon-chevron-left" href="/">Back</a>
               </div>
             </div><!-- /.container-fluid -->
         </nav>
@@ -56,7 +56,7 @@
                     <input type="time" class="form-control" name="time" id="time" placeholder="time">
                 </div>
                 <div class="form-group">
-                    <label for="Prefer Field" style=" text-align: left;">Prefer Field</label>
+                    <label for="Prefer Field" style=" text-align: left;">Preferred Field</label>
                     <input type="prefer_field" class="form-control" name="field" id="prefer_field" placeholder="prefer_field">
                 </div>
                 <div class="form-group">
@@ -66,11 +66,11 @@
 
                 <div class="form-group">
                     <label for="Description" style=" text-align: left;">Description</label>
-                    <textarea class="form-control" name="description" rows="3"></textarea>
+                    <textarea class="form-control" name="desc" rows="3"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="Profile Image" style=" text-align: left;">Profile Image</label>
-                    <input type="file" name="uploadfile" id="exampleInputFile">
+                    <input type="file" name="pic" id="exampleInputFile">
                 </div>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 

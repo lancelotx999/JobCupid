@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="/emp/main">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="/emp/main" style="position: fixed; right: 0;top:8px">Done</a>
+                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">Done</a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -47,7 +47,7 @@
           <div class="row">
             <div style="font-family:Segoe UI Semilight;font-size:30px;">John Doe, 20</div>
           </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
+          <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
            <div class="col-xs-4 col-sm-4"></div>
            <div class="col-xs-10 col-sm-4">
                <ul>
@@ -73,7 +73,7 @@
             <div class="row">
               <div style="font-family:Segoe UI Semilight;font-size:30px;">{{$user->name}}, {{$user->age}}</div>
             </div>
-            <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
+            <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
              <div class="col-xs-4 col-sm-4"></div>
              <div class="col-xs-10 col-sm-4">
                  <ul>
@@ -120,5 +120,9 @@
   allowPageScroll:"vertical"
 
 });
+    function goBack() {
+      window.history.go(-1);
+    }
+
 </script>
 @endsection

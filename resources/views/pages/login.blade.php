@@ -19,7 +19,7 @@
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
                 
-                <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
               </div>
             </div><!-- /.container-fluid -->
         </nav>
@@ -43,6 +43,7 @@
                     <label for="Password">Password</label>
                     <input type="password" class="form-control" id="password" name="password" placeholder="Password">
                 </div>
+                <p><a href="/">Not registered? Sign up now!</a></p>
                 <button type="submit" class="btn btn-default">Submit</button>
             </form> 
         </div>
@@ -50,7 +51,10 @@
         <div class="clearfix visible-xs-block"></div>
         <div class="col-xs-6 col-sm-4"></div>
     </div>
-  
   </div>
-
+  <script type="text/javascript">
+    function goBack() {
+      window.history.go(-1);
+    }
+  </script>
 @endsection

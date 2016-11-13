@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="#" style="position: fixed; right: 0;top:8px">Done</a>
+                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">Done</a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -48,7 +48,7 @@
           <div class="row">
             <div style="font-family:Segoe UI Semilight;font-size:30px;">StartUP, Kuching</div>
           </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
+          <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
            <div class="col-xs-4 col-sm-4"></div>
            <div class="col-xs-10 col-sm-4">
                <ul>
@@ -67,6 +67,8 @@
 
 
       @foreach($jobs as $job)
+          @foreach($employers as $employer)
+
             <div class="item">
                 <div class="row row-xs-5">
                     <div class="col-md-2 col-md-offset-5 text-center" style="min-height:250px;">
@@ -79,13 +81,12 @@
                         <p>Job Salary: {{$job->salary}}</p> -->
                     </div>
                 </div>
-          @foreach($employers as $employer)
             
                 <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:250px">
                         <div class="row">
                             <div style="font-family:Segoe UI Semilight;font-size:30px;">{{$employer->name}}, Kuching</div>
                         </div>
-                        <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
+                        <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
                             <div class="col-xs-4 col-sm-4"></div>
                                 <div class="col-xs-10 col-sm-4">
                                     <ul>
@@ -118,7 +119,7 @@
 
 </div>
 <div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
-            <button type="submit" class="btn btn-circle btn-lg  btn-primary">Log Out</button>
+            <a href="/login" class="btn btn-circle btn-lg  btn-primary">Log Out</a>
     </div>
 <script>
     $(".carousel").swipe({
@@ -132,5 +133,9 @@
   allowPageScroll:"vertical"
 
 });
+
+    function goBack() {
+      window.history.go(-1);
+    }
 </script>
 @endsection

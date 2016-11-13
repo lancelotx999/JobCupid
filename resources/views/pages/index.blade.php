@@ -29,7 +29,7 @@
             <div class="col-xs-5">
                 <div class="panel panel-default">
                 <div class="panel-title">
-                    Icon For Job Seeker
+                    <a href="\register\user">Icon For Job Seeker</a>
                 </div>
                 <div class="panel-body" style="min-height:300px;bottom:0;">
                     Job Seeker
@@ -44,7 +44,7 @@
            <div class="col-xs-5">
                 <div class="panel panel-default">
                 <div class="panel-title">
-                    Icon For Job Provider
+                    <a href="\register\employer">Icon For Job Provider</a>
                 </div>
                 <div class="panel-body" style="min-height:300px;bottom:0;">
                     Job Provider
@@ -54,8 +54,7 @@
             </div>
     </div>
     <div class="row">
-        <button type="submit" class="btn btn-default">Continue</button>
-         <div style="padding:10px;">Already have a account?<a href='/login'>Login</a></div>
+        <div style="padding:10px;">Already have a account?<a href='/login'>Login</a></div>
     </div>
     </div>
   </div>

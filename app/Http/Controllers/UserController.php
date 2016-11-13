@@ -48,11 +48,12 @@ class UserController extends Controller
         $user->email = $request->email;
         $user->password = $request->password;
         $user->age = $request->age;
-        $user->time = $request->time;
-        $user->field = $request->field;
+        $user->time_available = $request->time;
+        $user->preferred_field = $request->field;
         $user->skills = $request->skills;
-        $user->description = $request->description;
-        $user->uploadfile = $request->uploadfile;
+        $user->desc = $request->desc;
+        $user->pic = $request->pic;
+        $user->status = 'Free';
 
         $user->save();
 

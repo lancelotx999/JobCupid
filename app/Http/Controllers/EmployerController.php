@@ -50,8 +50,9 @@ class EmployerController extends Controller
         $employer->password = $request->password;
         $employer->sector = $request->sector;
         $employer->website = $request->website;
-        $employer->description = $request->description;
-        $employer->uploadfile = $request->uploadfile;
+        $employer->desc = $request->desc;
+        $employer->pic = $request->pic;
+        $employer->status = 'Free';
 
         $employer->save();
 

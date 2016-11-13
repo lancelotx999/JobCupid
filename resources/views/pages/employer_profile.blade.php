@@ -18,7 +18,7 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-user" href="/emp/profile"></a>
+                    <a class="navbar-brand glyphicon glyphicon-user" href="/employer"></a>
               </div>
                 <div class="nav navbar-nav navbar-right">
                     <a class="navbar-brand glyphicon glyphicon-briefcase" href="/chat" style="position: fixed; right: 0;top:8px"></a>
@@ -42,21 +42,21 @@
          <div class="col-md-4"></div>
          <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
             <div class="row">
-                <div style="font-family:Segoe UI Light;font-size:20px;">
+                <div style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
                       <ul>
-                        <li>{{$employer->name}}</li>
-                        <li>{{$employer->desc}}</li>
-                        <li>{{$employer->sector}}</li>
-                        <li>{{$employer->website}}</li>
+                        <li>Name: {{$employer->name}}</li>
+                        <li>Description: {{$employer->desc}}</li>
+                        <li>Sector: {{$employer->sector}}</li>
+                        <li>Website: {{$employer->website}}</li>
                       </ul>
                 </div>
             </div>
          </div>
       </div>
        <div class="col-md-6 col-md-offset-5">
-            <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
+            <!-- <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button> -->
             <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
-            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
+            <!-- <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button> -->
         </div>
     </div>
 
