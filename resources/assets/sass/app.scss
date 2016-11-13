@@ -122,13 +122,39 @@ img {
 .icon-register a {
   font-size: 3em; 
   margin: 10%;
-  padding: 10%;
+  padding: 10% 10% 0 10%;
 }
 
 .text-capitalize {
   font-style: italic;
 }
 
-.panel-body p {
-  text-transform: uppercase;
+.navbar-header a {
+  font-size: 1em;
+}
+
+.left {
+  text-align: left;
+}
+
+.centered {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.form-group {
+  padding: 0 1em;
+}
+
+div.navbar-header {
+  background-color:#8843d8;
+}
+.btn,
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:visited,
+.btn-primary:active,
+.btn-primary:focus, {
+  background-color: #8843d8;
+  border-color: #8843d8;
 }

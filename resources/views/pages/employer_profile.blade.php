@@ -18,11 +18,13 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-user" href="/employer"></a>
+                    <a class="navbar-brand glyphicon glyphicon-user" href="/employer" style="color: #fff"></a>
               </div>
+
+              <div class="navbar-brand" style="position: absolute; left: 38%; top: 2%; color: #fff"">Profile</div>
+
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="/chat" style="position: fixed; right: 0;top:8px"></a>
-              </div>
+                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="/chat" style="position: absolute; right: 0;top:1%; color: #fff"></a>
               
             </div><!-- /.container-fluid -->
         </nav>
@@ -33,16 +35,16 @@
  <div class="container-fluid">
      <div class="row row-xs-5" >
         <div class="col-md-4"></div>
-        <div class="col-md-4 panel panel-default text-center" style="min-height:250px;">
+        <div class="col-md-4 panel panel-default text-center" style="min-height: 100px">
             <h3>Employer Profile Image</h3>
         </div>
         <div class="col-md-4"></div>
      </div>
-     <div class="row row-xs-5 text-center" >
+      <div class="row row-xs-5 text-center" >
          <div class="col-md-4"></div>
          <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
             <div class="row">
-                <div style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
+                <div style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
                       <ul>
                         <li>Name: {{$employer->name}}</li>
                         <li>Description: {{$employer->desc}}</li>
@@ -53,11 +55,11 @@
             </div>
          </div>
       </div>
-       <div class="col-md-6 col-md-offset-5">
-            <!-- <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button> -->
-            <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></a>
-            <!-- <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button> -->
-        </div>
-    </div>
-
+  </div>
 @endsection
+
+@section('footer')
+    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef; padding: 3%;">
+        <a href="/login" class="btn btn-circle btn-lg  btn-primary">Log Out</a>
+@endsection
+

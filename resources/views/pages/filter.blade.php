@@ -17,13 +17,16 @@
         <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
-              </div>
-                <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">LOGO</a>
-              </div>
+                <div class="navbar-header">
+                    <a  
+                        class="navbar-brand glyphicon glyphicon-chevron-left" 
+                        onclick="goBack()" 
+                        style="color: #fff; cursor: pointer;"
+                    ></a>
+                </div>
               
+              <div class="navbar-brand" style="position: absolute; left: 40.3%; top: 2%; color: #fff"">Filter</div>
+              </div>
             </div><!-- /.container-fluid -->
         </nav>
     </header>
@@ -32,20 +35,14 @@
 @section('content_page')
  <div class="container">
     <div class="row">
-        <div class="col-xs-4 col-md-4"></div>
-        <div class="col-xs-10 col-md-4 text-center">
+        <div class="col-xs-12 col-md-8 text-center">
            <h2 style="font-family:Segoe UI Semilight;font-size:30px;">Introducing Filter</h2>
            <button type="submit" class="glyphicon glyphicon-filter btn btn-circle btn-primary"></button>
            <h4 style="font-family:Segoe UI Light;font-size:25px;">Got a specific taste for job?</h4>
            <h4 style="font-family:Segoe UI Light;font-size:25px;">Activate the filter feature now</h4>
         </div>
-        <div class="col-xs-4 col-md-4"></div>
-        <div class="col-md-8 col-md-offset-5">
-          
-        </div>
-    </div>
-    <div class="row row-xs-5 text-center navbar-fixed-bottom">
-          <button type="submit" class="btn btn-circle btn-lg btn-primary text-uppercase">buy now</button>
+    <div class="row row-xs-5 text-center">
+          <button type="submit" class="btn btn-circle btn-lg btn-primary text-uppercase">activate filter</button>
      </div>
   </div>
   <script type="text/javascript">

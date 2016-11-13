@@ -15,15 +15,21 @@
 @section('header')
     <header>
         <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
-            <div class="container-fluid">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
+          <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a  
+                class="navbar-brand glyphicon glyphicon-chevron-left"
+                onclick="goBack()"
+                style="color: #fff; cursor: pointer;"
+              ></a>
               </div>
-                <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">Done</a>
+
+              <div class="navbar-brand" style="position: absolute; left: 33%; top: 2%; color: #fff"">Job Listing</div>
+
+              <div class="nav navbar-nav navbar-right">
+                    <a class="navbar-brand glyphicon glyphicon-filter" href="/filter" style="position: absolute; right: 0;top:1%; color: #fff"></a>
               </div>
-              
             </div><!-- /.container-fluid -->
         </nav>
     </header>
@@ -31,7 +37,6 @@
 
 @section('content_page')
     <div class="container-fluid">
-    
     <div id="carousel-jobCupid-generic" class="carousel slide" data-ride="carousel" style="background-color:#ffffff;">
 
     <!-- Wrapper for slides -->
@@ -39,20 +44,20 @@
 
       <div class="item active">
         <div class="row row-xs-5">
-          <div class="col-md-2 col-md-offset-5 text-center" style="min-height:250px">
+          <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px">
              <h3>Job Title</h3>
-            <h3>Job Description</h3>
+              <h3>Job Description</h3>
           </div>
         </div>
-        <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:250px">
+        <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
           <div class="row">
-            <div style="font-family:Segoe UI Semilight;font-size:30px;">StartUP, Kuching</div>
+            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">StartUP, Kuching</div>
           </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
+          <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
            <div class="col-xs-4 col-sm-4"></div>
            <div class="col-xs-10 col-sm-4">
                <ul>
-                    <li>email@email.com</li>
+                  <li>email@email.com</li>
                    <li>012xxxxxxx</li>
                    <li>Status</li>
                    <li>Sector</li>
@@ -71,7 +76,7 @@
 
             <div class="item">
                 <div class="row row-xs-5">
-                    <div class="col-md-2 col-md-offset-5 text-center" style="min-height:250px;">
+                    <div class="col-md-2 col-md-offset-5 text-center" style="min-height:200px;">
                         <p>Job Title: {{$job->title}}</p>
                         <p>Job Description: {{$job->desc}}</p>
                         <p>Job Requirements: {{$job->requirements}}</p>
@@ -82,11 +87,11 @@
                     </div>
                 </div>
             
-                <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:250px">
+                <div class="row row-xs-5 text-center" style="background-color:#e5f2ef;min-height:200px">
                         <div class="row">
-                            <div style="font-family:Segoe UI Semilight;font-size:30px;">{{$employer->name}}, Kuching</div>
+                            <div style="font-family:Segoe UI Semilight;font-size:1.5em;">{{$employer->name}}, Kuching</div>
                         </div>
-                        <div class="row" style="font-family:Segoe UI Light;font-size:20px; text-align: left;">
+                        <div class="row" style="font-family:Segoe UI Light;font-size:1.25em; text-align: left;">
                             <div class="col-xs-4 col-sm-4"></div>
                                 <div class="col-xs-10 col-sm-4">
                                     <ul>
@@ -119,11 +124,10 @@
 
 </div>
 <div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
-            <a href="/login" class="btn btn-circle btn-lg  btn-primary">Log Out</a>
+            
     </div>
 <script>
     $(".carousel").swipe({
-
   swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
 
     if (direction == 'left') $(this).carousel('next');
@@ -138,4 +142,12 @@
       window.history.go(-1);
     }
 </script>
+@endsection
+
+@section('footer')
+    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef; padding: 3% 0;">
+           <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
+            <a href="/boost" type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary" style="margin: 0 10%"></a>
+            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
+    </div>
 @endsection

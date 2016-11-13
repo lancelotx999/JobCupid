@@ -18,10 +18,10 @@
             <div class="container-fluid">
                <!-- Brand and toggle get grouped for better mobile display -->
                <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" href="#">Back</a>
+                    <a class="navbar-brand glyphicon glyphicon-user" href="#"></a>
               </div>
                 <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" href="#" style="position: fixed; right: 0;top:8px">Done</a>
+                    <a class="navbar-brand glyphicon glyphicon-briefcase" href="#" style="position: fixed; right: 0;top:8px"></a>
               </div>
               
             </div><!-- /.container-fluid -->
@@ -39,32 +39,32 @@
 
       <div class="item active">
         <div class="row row-xs-5">
-          <div class="row row-xs-5">
            <div class="col-md-4"></div>
         <div class="col-md-4 panel panel-default text-center" style="min-height:250px;">
-            <h3>Profile Image</h3>
+             <h3>Job Title</h3>
+            <h3>Job description</h3>
         </div>
         <div class="col-md-4"></div>
         </div>
-        <div class="row row-xs-5 text-center" style="min-height:250px">
-          <div class="row">
-            <div style="font-family:Segoe UI Semilight;font-size:30px;">James, 18</div>
-          </div>
-          <div class="row" style="font-family:Segoe UI Light;font-size:20px;">
-           <div class="col-xs-4 col-sm-4"></div>
-           <div class="col-xs-10 col-sm-4">
-               <ul>
-                    <li>email@email.com</li>
-                   <li>012xxxxxxx</li>
-                   <li>Status</li>
-                   <li>Sector</li>
-                   <li>Website</li>
-               </ul>
-           </div>
-           <div class="clearfix visible-xs-block"></div>
-           <div class="col-xs-4 col-sm-4"></div>
-        </div>
-        </div>
+         <div class="row row-xs-5 text-center" style="min-height:250px">
+            <div class="col-md-4"></div>
+            <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
+            <div class="row">
+                <div style="font-family:Segoe UI Semilight;font-size:30px;">StartUP, Kuching</div>
+            </div>
+            <div class="row">
+                <div style="font-family:Segoe UI Light;font-size:20px;">
+                      <ul>
+                        <li>email@email.com</li>
+                        <li>012xxxxxxx</li>
+                        <li>Status</li>
+                      </ul>
+                </div>
+            </div>
+         </div>
+            <div class="col-md-4"></div>
+         </div>
+
       </div>
 
       <div class="item">
@@ -93,7 +93,12 @@
             </div>
          </div>
       </div>
-   
+
+
+
+
+
+    
     </div>
     
     <!-- Controls -->
@@ -109,7 +114,9 @@
 
 </div>
 <div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
-            <button type="submit" class="btn btn-circle btn-lg  btn-primary">Log Out</button>
+           <button type="submit" class="glyphicon glyphicon-remove btn btn-circle btn-primary"></button>
+            <button type="submit" class="glyphicon glyphicon-flash btn btn-circle btn-primary"></button>
+            <button type="submit" class="glyphicon glyphicon-ok btn btn-circle btn-primary"></button>
     </div>
 <script>
     $(".carousel").swipe({

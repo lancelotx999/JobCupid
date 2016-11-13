@@ -15,15 +15,17 @@
 @section('header')
     <header>
         <nav class="navbar navbar-default" style="background-color:#e5f2ef;">
-            <div class="container-fluid">
-               <!-- Brand and toggle get grouped for better mobile display -->
-               <div class="navbar-header">
-                    <a class="navbar-brand glyphicon glyphicon-chevron-left" onclick="goBack()">Back</a>
+          <div class="container-fluid">
+          <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a  
+                class="navbar-brand glyphicon glyphicon-chevron-left"
+                onclick="goBack()"
+                style="color: #fff; cursor: pointer;"
+              ></a>
               </div>
-                <div class="nav navbar-nav navbar-right">
-                    <a class="navbar-brand" onclick="goBack()" style="position: fixed; right: 0;top:8px">LOGO</a>
+              <div class="navbar-brand" style="position: absolute; left: 39%; top: 2%; color: #fff"">Chat</div>
               </div>
-              
             </div><!-- /.container-fluid -->
         </nav>
     </header>
@@ -31,12 +33,12 @@
 
 @section('content_page')
  <div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-5">
-           <h2>It's a Match !</h2>
+    <div class="row" style="margin-top: 30%;">
+        <div class="col-xs-12 col-md-8 text-center">
+           <h2>You got a match! Awesome!</h2>
         </div>
     </div>
-    <div class="row row-xs-5 text-center navbar-fixed-bottom">
+    <div class="row row-xs-5 text-center">
           <button type="submit" class="btn btn-circle btn-xl btn-primary text-uppercase">talk to the employer now</button>
      </div>
   </div>

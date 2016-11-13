@@ -22,34 +22,31 @@
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-xs-5">
+            <div class="col-xs-6">
                 <div class="panel panel-default">
                 <div class="panel-title icon-register">
                     <a href="\register\user" class="glyphicon glyphicon-pawn"></a>
                 </div>
                 <div class="panel-body">
-                    Job Seeker
+                    <a href="\register\user">Job Seeker</a>
                     <h6 class="text-capitalize">I need a job</h6>
                 </div>
                 
                 </div>
-                
             </div>
 
-            <div class="col-xs-2">          
-            </div>
+            <div class="col-xs-1"></div>
 
-           <div class="col-xs-5">
+           <div class="col-xs-6">
                 <div class="panel panel-default">
                 <div class="panel-title icon-register">
                     <a href="\register\employer" class="glyphicon glyphicon-king"></a>
-                    </div>
-                    <div class="panel-body">
-                    Job Provider
-                    <h6 class="text-capitalize">I need a worker</h6>
-                    </div>
                 </div>
-                
+                <div class="panel-body">
+                    <a href="\register\employer" >Job Provider</a>
+                    <h6 class="text-capitalize">I need workers</h6>
+                </div>
+                </div>
             </div>
     </div>
     <div class="row">
