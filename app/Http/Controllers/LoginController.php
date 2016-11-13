@@ -27,7 +27,9 @@ class LoginController extends Controller
                 $data = [];
                 $data['user'] = User::find($user->id);
 
-                $request->session()->put('current_user', User::find($user->id));
+                // return User::find($user->id);
+
+                // return $request->session()->put('current_user', User::find($user->id));
 
                 return view('/pages/user_profile',$data);
             }

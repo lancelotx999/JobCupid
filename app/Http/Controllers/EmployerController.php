@@ -20,7 +20,7 @@ class EmployerController extends Controller
         // $data['employer'] = Employer::all();
         $data['users'] = User::all();
         $data['job'] = Job::all();
-
+        
         return view('/pages/employer_main', $data);
     }
 

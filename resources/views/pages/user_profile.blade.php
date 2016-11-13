@@ -42,15 +42,15 @@
          <div class="col-md-4"></div>
          <div class="col-md-4 panel panel-default text-center" style="background-color:#e5f2ef;">
             <div class="row">
-                <div style="font-family:Segoe UI Semilight;font-size:30px;">{{$current_user->name}}, {{$current_user->age}}</div>
+                <div style="font-family:Segoe UI Semilight;font-size:30px;">{{$user->name}}, {{$user->age}}</div>
             </div>
             <div class="row">
                 <div style="font-family:Segoe UI Light;font-size:20px;">
                      <ul>
-                        <li>{{$current_user->time_available}}</li>
-                        <li>{{$current_user->preferred_field}}</li>
-                        <li>{{$current_user->skills}}</li>
-                        <li>{{$current_user->desc}}</li>
+                        <li>{{$user->time_available}}</li>
+                        <li>{{$user->preferred_field}}</li>
+                        <li>{{$user->skills}}</li>
+                        <li>{{$user->desc}}</li>
                      </ul>
                 </div>
             </div>
