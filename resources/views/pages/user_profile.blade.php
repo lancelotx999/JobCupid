@@ -134,9 +134,6 @@
   </div>
 
 </div>
-<div class="row text-center panel panel-footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
-            <button type="submit" class="btn btn-circle btn-lg  btn-primary">Log Out</button>
-    </div>
 <script>
     $(".carousel").swipe({
 
@@ -150,4 +147,9 @@
 
 });
 </script>
+@endsection
+
+@section('footer')
+    <div class="text-center footer navbar-fixed-bottom" style="background-color:#e5f2ef;">
+        <button type="submit" class="btn btn-circle btn-lg  btn-primary">Log Out</button>
 @endsection
